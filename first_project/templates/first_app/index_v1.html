@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <link rel="stylesheet" href="{% static "css/heading_style.css" %}"> <!--using the css to change the heading style-->
+  </head>
+  <body>
+    <h1>Hello, this is index.html</h1>
+    {{ insert_me }}     <!--Django template. Use it in the views.py file as the key-->
+    <img src="{% static "images/284746.jpg" %}" alt="something is wrong!">
+  </body>
+</html>

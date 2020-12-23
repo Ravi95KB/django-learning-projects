@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html" %}
+  {% block body_block %}
+  {% load my_extras %}                    <!--Loading the file where custom template tags are defined-->
+    <h1>WELCOME TO INDEX</h1>
+    <h2>This is index.html page</h2>
+    <h1>{{ text|cut:'hell' }}</h1>
+    <h1>{{ number|add:"99" }}</h1>         <!--Calling the keys of the context dictionary defined in views.py-->
+    <h1>{{ text|palin }}</h1>
+  {% endblock %}
